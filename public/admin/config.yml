@@ -8,7 +8,7 @@ public_folder: /img
 
 collections:
   - name: 'aktuelles'
-    label: 'Aktuelles'
+    label: 'Post'
     folder: 'content/_aktuelles'
     format: 'frontmatter'
     create: true
@@ -17,4 +17,15 @@ collections:
       preview: false
     fields:
       - { label: 'Titel', name: 'title', widget: 'string' }
-      - { label: 'Text', name: 'text', widget: 'markdown' }
+      - { label: 'Text', name: 'body', widget: 'markdown' }
+  - name: 'rubriken'
+    label: 'Rubrik'
+    folder: 'content'
+    format: 'frontmatter'
+    create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Titel', name: 'title', widget: 'string' }
+      - { label: 'Inhalt', name: 'body', widget: 'markdown' }
