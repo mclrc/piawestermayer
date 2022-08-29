@@ -3,6 +3,7 @@
 </template>
 <script setup lang="ts">
 import 'leaflet/dist/leaflet.css?module'
+import markerIconPng from 'leaflet/dist/images/marker-icon.png'
 import { LatLngExpression } from 'leaflet'
 
 const address = 'Olivaer Platz 15'
@@ -19,7 +20,14 @@ onMounted(async () => {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	}).addTo(map)
 	
-	const marker = L.marker(coords).addTo(map)
+	const marker = L.marker(coords, {
+		icon: new L.Icon({
+			iconUrl: markerIconPng,
+			iconAnchor: [13, 41],
+			popupAnchor: [0, -32],
+		}),
+	}).addTo(map)
+	
 	marker.bindPopup(address).openPopup()
 })
 </script>
