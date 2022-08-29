@@ -1,6 +1,9 @@
 <template>
 	<ul>
-		<li v-for="a of data" :key="a.title"><ContentRenderer :value="a"/></li>
+		<li v-for="a of data" :key="a.title">
+			<span>{{ a.date }}</span>
+			<ContentRenderer :value="a"/>
+		</li>
 	</ul>
 </template>
 
