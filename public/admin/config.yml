@@ -7,9 +7,9 @@ media_folder: public/img
 public_folder: /img
 
 collections:
-  - name: 'aktuell'
-    label: 'Aktuell'
-    folder: 'content/aktuell'
+  - name: 'aktuelles'
+    label: 'Aktuelles'
+    folder: 'content/_aktuelles'
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -17,5 +17,4 @@ collections:
       preview: false
     fields:
       - { label: 'Titel', name: 'title', widget: 'string' }
-      - { label: 'Datum', name: 'date', widget: 'datetime' }
-      - { label: 'Text', name: 'description', widget: 'string' }
+      - { label: 'Text', name: 'text', widget: 'markdown' }

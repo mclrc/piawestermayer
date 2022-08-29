@@ -9,7 +9,6 @@ const { data, pending, error, refresh } = await useAsyncData(
 	'announcements',
 	() => queryContent('/_aktuelles/').find()
 )
-console.log(data)
 </script>
 
 <style lang="scss" scoped>
