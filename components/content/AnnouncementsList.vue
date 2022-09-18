@@ -1,7 +1,7 @@
 <template>
 	<ul>
 		<li v-for="a of data" :key="a.title">
-			<span>{{ a.date }}</span>
+			<span class="date">{{ new Date(a.date).toLocaleDateString('de-DE') }}</span>
 			<ContentRenderer :value="a"/>
 		</li>
 	</ul>
@@ -15,5 +15,19 @@ const { data, pending, error, refresh } = await useAsyncData(
 </script>
 
 <style lang="scss" scoped>
+ul {
+	list-style: none;
+}
+
+li {
+	.date {
+		font-size: .9em;
+		color: #888;
+	}
+	&:not(:last-child) {
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #ddd;
+	}
+}
 
 </style>

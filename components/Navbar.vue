@@ -64,13 +64,14 @@ $expand-collapse-anim-time: .2s;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
 	}
 	nav {
-		padding: $content-padding 1rem;
+		padding: 0 1rem;
 		width: 100%;
 		max-width: $max-content-width;
 		margin: 0 auto;
 	}
 }
 #top {
+	height: $navbar-height;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -83,7 +84,7 @@ $expand-collapse-anim-time: .2s;
     align-items: center;
   }
   #route-name {
-    font-size: .9rem;
+    font-size: 1.1rem;
 		font-weight: bold;
   }
 }
@@ -97,7 +98,7 @@ $expand-collapse-anim-time: .2s;
   padding: 1rem;
   box-sizing: content-box;
   margin: 0;
-  margin-right: -1rem;
+  margin-right: -$content-padding;
 
   cursor: pointer;
 
@@ -133,7 +134,7 @@ $expand-collapse-anim-time: .2s;
 	line-height: 1.1;
 	h1 {
 		font-family: 'Radley';
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		margin: 0;
 	}
 	h2 {
@@ -151,15 +152,15 @@ $expand-collapse-anim-time: .2s;
 }
 #links {
 	transition: $expand-collapse-anim-time;
-	height: 40vh;
+	height: 35vh;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: flex-end;
 	justify-content: space-evenly;
 	list-style: none;
 	margin: 0;
-	padding: 0 2rem;
+	padding: 0 (4rem -$content-padding); // Hamburger icon width + padding - the negative padding on the right
 	
 	a {
 		transition: $expand-collapse-anim-time;
@@ -191,9 +192,6 @@ $expand-collapse-anim-time: .2s;
 		&.router-link-exact-active::after, &:hover::after {
 			opacity: 1;
 		}
-	}
-	>:not(:last-child) {
-		margin-right: 1rem;
 	}
 }
 </style>
