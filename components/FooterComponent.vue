@@ -10,6 +10,7 @@
 @import '@/assets/style/vars.scss';
 
 footer {
+	font-family: Quicksand;
 	max-width: $max-content-width;
 	padding: 2rem $content-padding;
 	display: block;
