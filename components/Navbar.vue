@@ -35,6 +35,7 @@ const route = useRoute()
 
 watch(() => route.fullPath, _newRoute => {
 	collapsed.value = true
+	document.firstElementChild.scrollTop = 0;
 })
 
 function onScroll() {
