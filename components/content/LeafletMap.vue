@@ -32,8 +32,12 @@ onMounted(async () => {
 })
 </script>
 <style scoped lang="scss">
+@import '@/assets/style/vars.scss';
+
 #map {
-	width: 400px;
-	height: 400px;
+	width: 100%;
+	height: $max-content-width;
+	max-width: $max-content-width;
+	max-height: 40vh;
 }
 </style>

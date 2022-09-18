@@ -1,0 +1,36 @@
+@import "vars.scss";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-top: 5rem;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+p, span {
+	color: $text-color;
+}
+
+.document-driven-page {
+	margin: 0 auto;
+	padding: 0 $content-padding;
+	width: 100%;
+	max-width: $max-content-width;
+	font-family: Quicksand;
+	a {
+		color: $accent-color;
+	}
+	h2 > a, h3 > a {
+		color: $text-color;
+		text-decoration: none;
+	}
+}
