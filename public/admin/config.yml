@@ -33,4 +33,5 @@ collections:
       preview: false
     fields:
       - { label: 'Titel', name: 'title', widget: 'string' }
+      - { label: 'Hintergrundbild', name: 'bannerImage', widget: 'image' }
       - { label: 'Inhalt', name: 'body', widget: 'markdown' }
