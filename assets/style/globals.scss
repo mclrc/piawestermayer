@@ -26,6 +26,10 @@ p, span {
 	width: 100%;
 	max-width: $max-content-width;
 	font-family: Quicksand;
+	line-height: 1.6;
+	p {
+		text-align: justify;
+	}
 	a {
 		color: $accent-color;
 	}
