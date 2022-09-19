@@ -41,5 +41,6 @@ p, span {
 @media only screen and (max-width: $breakpoint) {
 	img {
 		float: none !important;
+		margin: 0 auto !important;
 	}
 }

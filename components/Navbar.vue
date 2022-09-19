@@ -4,7 +4,7 @@
       <div id="top">
         <header id="branding">
           <h1>Pia Westermayer</h1>
-					<h2>Kinder- & Jugendlichenpsychotherapeutin</h2>
+					<h2>Kinder- & Jugendlichenpsychotherapie</h2>
         </header>
         <div id="hamburger-menu">
           <div>
