@@ -4,7 +4,7 @@
       <div id="top">
         <header id="branding">
           <h1>Pia Westermayer</h1>
-					<h2>Praxis für Psychotherapie</h2>
+					<h2>Kinder- & Jugendlichenpsychotherapeutin</h2>
         </header>
         <div id="hamburger-menu">
           <div>
@@ -85,7 +85,7 @@ $expand-collapse-anim-time: .2s;
     align-items: center;
   }
   #route-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
 		font-weight: bold;
   }
 }
@@ -141,7 +141,7 @@ $expand-collapse-anim-time: .2s;
 	h2 {
 		font-family: 'Quicksand';
 		font-weight: 400;
-		font-size: .9rem;
+		font-size: .7rem;
 		margin: 0;
 	}
 }
