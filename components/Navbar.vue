@@ -195,4 +195,35 @@ $expand-collapse-anim-time: .2s;
 		}
 	}
 }
+
+@media only screen and (min-width: $breakpoint) {
+	nav {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#top {
+		width: auto;
+	}
+	#hamburger-menu {
+		display: none;
+	}
+	#navbar.collapsed #links, #navbar:not(.collapsed) #links {
+		padding: $content-padding 0;
+		padding-left: $content-padding;
+		height: auto;
+		flex-direction: row;
+		justify-content: space-between;
+		#links {
+			width: 100%;
+		}
+		a {
+			opacity: 1;
+		}
+		li:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+	}
+}
 </style>
