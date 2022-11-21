@@ -1,8 +1,8 @@
 ---
 title: Therapieplatz
-date: 2022-08-29T23:29:03.627Z
+date: 2022-11-21T16:02:28.871Z
 ---
-Auf Nachfrage sind freie Plätze vorhanden, bitte melden Sie sich telefonisch oder per Mail.
+Es gibt noch freie Plätze vormittags und am frühen Nachmittag, bitte melden Sie sich telefonisch oder per Mail.
 
 Telefon: 01779702392
 
